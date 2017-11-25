@@ -10,8 +10,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class MainController {
 
     @RequestMapping(method = RequestMethod.GET)
-    public String start(Model model){
+    public String start(Model model) {
         return "index";
     }
+
+//    @RequestMapping(method = RequestMethod.GET, value = "/users")
+//    public String getUsers(Model model) {
+//        return "index";
+//    }
 
 }

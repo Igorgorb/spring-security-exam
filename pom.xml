@@ -10,7 +10,9 @@
     <packaging>war</packaging>
 
     <properties>
-        <spring.mvc>4.0.0.RELEASE</spring.mvc>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+        <!--<spring.mvc>4.0.0.RELEASE</spring.mvc> -->
+        <spring.mvc>5.0.1.RELEASE</spring.mvc>
         <javax.servlet>3.0.1</javax.servlet>
         <jstl.version>1.2</jstl.version>
         <spring.securiry>3.2.0.RELEASE</spring.securiry>
@@ -65,6 +67,17 @@
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-taglibs</artifactId>
             <version>${spring.securiry}</version>
+        </dependency>
+
+        <!--
+        Object-to-Relation-Mapping (ORM) integration with Hibernate, JPA, and iBatis.
+        (depends on spring-core, spring-beans, spring-context, spring-tx)
+        Define this if you need ORM (org.springframework.orm.*)
+    -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>4.3.12.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>

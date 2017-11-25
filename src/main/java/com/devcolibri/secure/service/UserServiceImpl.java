@@ -1,12 +1,20 @@
 package com.devcolibri.secure.service;
 
+import com.devcolibri.secure.dao.UserRepository;
 import com.devcolibri.secure.entity.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class UserServiceImpl implements UserService {
-/* Так хочет Идея */
- //   @Override
+
+    @Autowired
+    private UserRepository userRepository;
+
+    /* Так хочет Идея */
+    //   @Override
     public User getUser(String login) {
         User user = new User();
         user.setLogin(login);
@@ -15,4 +23,12 @@ public class UserServiceImpl implements UserService {
         return user;
     }
 
+
+    public List<User> getAllUsers() {
+        return this.userRepository.getAllUsers();
+    }
+
+    public Integer createUser(User user) {
+        return this.userRepository.createUser(user);
+    }
 }
