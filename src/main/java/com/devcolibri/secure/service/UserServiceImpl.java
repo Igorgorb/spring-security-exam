@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class UserServiceImpl implements UserService {
-
+/* Так хочет Идея */
  //   @Override
     public User getUser(String login) {
         User user = new User();
