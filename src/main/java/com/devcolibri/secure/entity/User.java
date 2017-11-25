@@ -15,7 +15,7 @@ public class User {
     }
 
     public User() {
-
+        System.out.println("user");
     }
 
     public User(int id, String login, String password) {
