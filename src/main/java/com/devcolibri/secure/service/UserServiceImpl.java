@@ -13,7 +13,7 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository userRepository;
 
-    /* Так хочет Идея */
+    
     //   @Override
     public User getUser(String login) {
         User user = new User();

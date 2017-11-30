@@ -5,6 +5,9 @@
 *.log
 
 *.iml
+.DS_Store
+nb-configuration.xml
+nbactions.xml
 
 # BlueJ files
 *.ctxt
