@@ -15,7 +15,7 @@
         <spring.mvc>5.0.1.RELEASE</spring.mvc>
         <javax.servlet>3.0.1</javax.servlet>
         <jstl.version>1.2</jstl.version>
-        <spring.securiry>5.2.10.RELEASE</spring.securiry>
+        <spring.securiry>5.2.11.RELEASE</spring.securiry>
         <spring.test>3.2.4.RELEASE</spring.test>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
